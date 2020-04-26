@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<application>
+    <version>1.0.1</version>
+    <author>huanxue</author>
+    <page name="baidu_login">
+        <username>15797685177</username>
+        <password>5211314</password>
+    </page>
+</application>
