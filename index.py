@@ -33,12 +33,13 @@ class Index:
         # # 把path添加到全局变量中
         # constants.set_value('log_folder', log_folder)
         # constants.set_value('log_file', log_file)
-        #
+
         # # 设置当此测试excel报告输出的文件
         # excel_report_path = conf.get_config('system', 'excel_report_path')
         # excel_report_folder = excel_report_path + now_time.strftime('%Y-%m-%d')
         # excel_report_file = now_time.strftime('%H_%M_%S')
-        # constants.set_value('excel_report_folder')
+        # constants.set_value('excel_report_folder',excel_report_folder)
+        # constants.set_value('excel_report_file',excel_report_file)
         #
         # # 创建到处excel报告的文件夹
         # if not os.path.exists(excel_report_folder):
@@ -48,13 +49,13 @@ class Index:
         # excel_file = Workbook(encoding='utf-8')
         # excel_sheet = excel_file.add_sheet('测试报告')
         # for i in range(0, 4):
-        #     excel_file.col(i).width = 256*40
+        #     excel_sheet.col(i).width = 256*40
         #
         # excel_sheet.write(0, 0, label='测试业务')
         # excel_sheet.write(0, 1, label='测试行为')
         # excel_sheet.write(0, 2, label='描述')
         # excel_sheet.write(0, 3, label='测试时间')
-        # excel_sheet.save(excel_report_folder + '/' + excel_report_file + '.xlsx')
+        # excel_file.save(excel_report_folder + '/' + excel_report_file + '.xlsx')
 
 
 if __name__ == '__main__':
